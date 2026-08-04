@@ -17,7 +17,7 @@ public class VendingMachine {
 
         while(runningTotal < snackPrice){
             System.out.print("Enter coin name: ");
-            String input = scanner.nextLine();
+            String input = scanner.nextLine().toUpperCase();
 
             Coin coin = Coin.valueOf(input);
 
